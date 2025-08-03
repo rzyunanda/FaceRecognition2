@@ -1,9 +1,12 @@
 
 # stack face_recognition
+dlib==19.24.4
 face_recognition==1.3.0
-opencv-python-headless==4.10.0.82
-numpy
-scikit-learn
-pandas
+face_recognition_models==0.3.0
+
+opencv-python-headless==4.8.1.78
+numpy==2.3.0
+scikit-learn==1.4.2
+pandas==2.2.2
 gTTS==2.5.0
 requests
