@@ -1,13 +1,16 @@
+# --- UI ---
 streamlit==1.35.0
-streamlit-webrtc>=0.63.0,<0.64   # versi yg support Py 3.11+
+streamlit-webrtc==0.63.3        # versi terbaru yg support Python 3.11
 
-# stack InsightFace (tanpa dlib)
-insightface==0.8.9
-onnxruntime==1.18.0
+# --- Face-recognition stack ---
+dlib==19.24.4                   # punya wheel cp311 manylinux → tidak compile
+face_recognition==1.3.0
+face_recognition_models==0.3.0  # file .dat model
 
-opencv-python-headless==4.10.0.84  # build wheel yg sudah link ke NumPy 2
-numpy==2.2.6
-scikit-learn==1.4.2                # 1.4.x sudah support NumPy ≥2
+# --- Utilitas ---
+opencv-python-headless==4.8.1.78
+numpy==1.26.4                   # terakhir sebelum NumPy 2 (aman utk dlib)
+scikit-learn==1.4.2
 pandas==2.2.2
-requests
 gTTS==2.5.0
+requests
